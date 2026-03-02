@@ -1,0 +1,32 @@
+{
+    "name": "locky42/leopard-admin",
+    "description": "A library for managing the administration panel of a web application.",
+    "type": "library",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Максим Зінченко",
+            "email": "zinchenko.m.42@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=8.3",
+        "doctrine/orm": "^3",
+        "locky42/leopard-user": "^0.0.1",
+        "almasaeed2010/adminlte": "^3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leopard\\Admin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Leopard\\Admin\\Tests\\": "tests/"
+        }
+    }
+}
