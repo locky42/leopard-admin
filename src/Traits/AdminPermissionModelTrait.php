@@ -15,6 +15,6 @@ trait AdminPermissionModelTrait
 {
     use PermissionModelTrait;
 
-    #[ORM\ManyToMany(targetEntity: AdminRoleInterface::class, mappedBy: "adminPermissions")]
+    #[ORM\ManyToMany(targetEntity: AdminRoleInterface::class, mappedBy: "permissions")]
     protected $roles;
 }
