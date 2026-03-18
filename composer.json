@@ -2,7 +2,7 @@
     "name": "locky42/leopard-admin",
     "description": "A library for managing the administration panel of a web application.",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Максим Зінченко",
