@@ -18,8 +18,14 @@ class AdminAssetsHelper
      */
     public static function getAdminAsset(string $path)
     {
-        $base = dirname(__DIR__, 4) . '/vendor/almasaeed2010/adminlte/';
+        $countParrentDir = 3;
+        $base = dirname(__DIR__, $countParrentDir) . '/vendor/almasaeed2010/adminlte/';
         $file = realpath($base . $path);
+
+        if (!$file) {
+            $base = dirname(__DIR__, ++$countParrentDir) . '/vendor/almasaeed2010/adminlte/';
+            $file = realpath($base . $path);
+        }
 
         if (!$file || !str_starts_with($file, realpath($base))) {
             return false;
