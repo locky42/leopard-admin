@@ -18,7 +18,7 @@ class AdminAssetsHelper
      */
     public static function getAdminAsset(string $path)
     {
-        $countParrentDir = 3;
+        $countParrentDir = 4;
         $base = dirname(__DIR__, $countParrentDir) . '/vendor/almasaeed2010/adminlte/';
         $file = realpath($base . $path);
 
